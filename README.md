@@ -1,0 +1,1 @@
+This repository is a beginner's guide to using Perl with Git. It includes basic Perl scripts, explanations, and examples that help new users understand both Perl programming concepts and Git version control practices.
