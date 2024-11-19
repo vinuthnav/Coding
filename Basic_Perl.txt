@@ -1,0 +1,144 @@
+$employee_name="Sagar";
+$employee_age=23;
+$employee_salary=44.05;
+print "Age=$employee_age\n";
+print "Name=$employee_name\n";
+print "Salary=$employee_salary\n"
+
+@names=("Mohan","Ekansh","Henna");
+@ages=(25,28,31);
+@salaries=(234.87,376.4,453.34);
+
+print "\$ages[0]=$ages[0]\n";
+print "\$ages[1]=$ages[1]\n";
+print "\$ages[2]=$ages[2]\n";
+print "\$names[0]=$names[0]\n";
+print "\$names[1]=$names[1]\n";
+print "\$names[2]=$names[2]\n";
+print "@salaries"
+
+
+%emp_data=('Danish',28,'Raju',40,'Ritesh',25);
+print $emp_data{"Ritesh"};
+
+$stringvar="Abc";
+print $stringvar*2;
+
+#
+$stringvar="12p34";
+print $stringvar*2
+
+
+$stringvar="abc";
+$stringvar++;
+print $stringvar;
+$newstring="t"x 5;
+print $newstring;
+
+$str="1.2p34";
+$str++;
+print $str;
+
+
+#Lists are collection of Scalars
+# List of characters
+
+# Declaring a List:
+@names=(Danish,Satish,Rajesh,Manju,Uma,Vipin,Suresh);
+# Accessing list elements:
+$array_element=$names[4];
+# Accessing last element of a List:
+$last_name=$names[-1];
+print "$array_element\n";
+print $last_name;
+
+
+# Slicing elements in a list;
+
+@new_names[0,1,2]=@names[1,3,5];
+print $new_names[0];
+@list1=(1..10);
+print "@list1\n";
+
+@list2=(aa..ad);
+print @list2;
+print "@list2";
+
+@num=(9,2,8,4,1);
+@names=(rosy,mahesh,ruby,john);
+@sorted_num=sort @num;
+@sorted_names=sort @names;
+print ("@sorted_num\n");
+print ("@sorted_names\n");
+@descend_num=reverse sort @num;
+print "@descend_num";
+
+
+string=join array ;
+$string1=join(" ","This","is","a","String");
+print "$string1";
+
+# Split is opposite to the join
+# 
+array=split(string);
+
+$string="words::separated::by::colons";
+@array=split(/::/,$string);
+print("@array\n");
+$string1="abcde";
+@array1=split(//,$string1);
+print("@array1\n");
+
+
+# $salary=10500;
+if($salary>10000){
+  print "Employee is Manager\n";
+}
+
+# unless condition is a type of condition in which we will be similar to if but opposite to it:i.e., Not if::
+
+$a=22;
+unless($a<20){
+  print "a iis greater than 20\n";
+}
+
+
+
+use feature 'switch';
+$var = 30;
+@array = (10, 20, 30);
+%hash = ('key1' => 10, 'key2' => 20);
+
+# Using switch statement
+given($var) {
+    when(10) { print "number 100\n"; }
+    when("a") { print "String a\n"; }
+    when([1..10, 42]) { print "number in discontinuous list\n"; }
+    when(\@array) { print "number in array list\n"; }
+    when(\%hash) { print "entry in hash\n"; }
+    default { print "Previous case is not true\n"; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
